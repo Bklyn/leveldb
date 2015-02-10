@@ -449,7 +449,7 @@ also ignores trailing spaces.  For example:
       for (int i = 0; i &lt; n; i++) {
         trimmed[i] = RemoveTrailingSpaces(keys[i]);
       }
-      return builtin_policy_-&gt;CreateFilter(&amp;trimmed[i], n, dst);
+      return builtin_policy_-&gt;CreateFilter(&amp;trimmed[0], n, dst);
     }
 
     bool KeyMayMatch(const Slice& key, const Slice& filter) const {
